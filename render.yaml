@@ -1,0 +1,21 @@
+version: 1
+services:
+  - type: web
+    name: crypto-mining-game
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    autoDeploy: true
+    region: oregon
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: '5173'
+      - key: MONGODB_URI
+        value: mongodb+srv://lwqbt:7607607Qq@lwqb.jykcr.mongodb.net/?retryWrites=true&w=majority&appName=lwqb # Replace with your actual MongoDB URI
+      - key: TELEGRAM_BOT_TOKEN
+        value: 8181052751:AAHfXuYy4sLiVE5tIBEZhLKoxOysCfmEvkU # Replace with your actual Telegram bot token
+      - key: VITE_API_URL
+        value: https://your-render-url.onrender.com # Replace with your actual Render URL
