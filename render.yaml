@@ -18,4 +18,4 @@ services:
       - key: TELEGRAM_BOT_TOKEN
         value: 8181052751:AAHfXuYy4sLiVE5tIBEZhLKoxOysCfmEvkU # Replace with your actual Telegram bot token
       - key: VITE_API_URL
-        value: https://your-render-url.onrender.com # Replace with your actual Render URL
+        value: https://crypto-mining-game.onrender.com # Replace with your actual Render URL
